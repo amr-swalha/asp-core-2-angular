@@ -10,6 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { TestComponent } from './components/test/test.component';
+import { DatabindingComponent } from './components/databinding/databinding.component';
 @NgModule({
     declarations: [
         AppComponent,
@@ -17,7 +18,8 @@ import { TestComponent } from './components/test/test.component';
         CounterComponent,
         FetchDataComponent,
         HomeComponent,
-        TestComponent
+        TestComponent,
+        DatabindingComponent
     ],
     imports: [
         CommonModule,
@@ -29,6 +31,7 @@ import { TestComponent } from './components/test/test.component';
             { path: 'counter', component: CounterComponent },
             { path: 'fetch-data', component: FetchDataComponent },
             { path: 'test', component: TestComponent },
+            { path: 'databinding', component: DatabindingComponent },
             { path: '**', redirectTo: 'home' }
         ])
     ]
